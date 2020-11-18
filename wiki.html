@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/61c3e49273.js" crossorigin="anonymous"></script>
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		
+		header {
+			width: 12%;
+			margin-left: auto;
+			margin-right: auto;
+			float: left;
+			max-height: 10000000px;
+			padding-left: 15px;
+			background-image: linear-gradient(to bottom, #ffffff 2%, rgb(218, 214, 214) 98%);
+			background-position: bottom left;
+			border-right: 1px solid lightblue;
+          
+		}
+
+		header p {
+			cursor: pointer;
+		}
+
+		header img {
+			width: 120px;
+
+		}
+
+		.start_ul {
+			padding-top: 30px;
+		}
+
+		.start_ul2 {
+			padding-top: 0;
+
+		}
+
+
+
+		header ul li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			font-size: 13px;
+			padding-bottom: 2px;
+			cursor: pointer;
+		}
+
+		header p {
+			color: rgb(107, 104, 104);
+			font-size: 13px;
+			
+		}
+
+		hr {
+			width: 86%;
+			background-image: linear-gradient(to right, white 0-20%, rgb(148, 146, 146) 21-60%, white 61-100%);
+		}
+
+		.space_btn_lists {
+			max-height: 2px;
+		}
+
+
+
+
+
+		.material-icons {
+			float: right;
+			margin-right: 20px;
+			font-size: 15px;
+		}
+
+		.material-icons:hover {
+			color: black;
+			cursor: pointer;
+		}
+
+		.edit_links {
+			padding-left: 60px;
+			padding-top: 10px;
+		}
+
+		nav {
+			display: inline;
+		}
+
+		nav p {
+			float: right;
+			color: black;
+			font-size: 5px;
+		}
+
+		button {
+			border: 2px solid rgb(192, 191, 191);
+		}
+
+		.top_nav {
+			display: inline-flex;
+		}
+
+
+		.top_nav p {
+			font-size: 12px;
+			padding-right: 5px;
+			padding-top: 10px;
+		}
+
+		.top_nav ul {
+			display: flex;
+		}
+
+		.top_nav ul li {
+			list-style: none;
+			font-size: 12px;
+			padding: 10px 5px 10px 5px;
+		}
+
+		.user_icon {
+			padding-top: 9px;
+		}
+
+		.second_nav {
+			padding-top: 50px;
+
+		}
+
+		.second_nav ul {
+			display: flex;
+			list-style: none;
+		}
+
+		.nav-tabs {
+			background-image: linear-gradient(to top, rgb(226, 226, 226) 1%, white 95%);
+		}
+
+		@media screen and (max-width:800px) {
+			header img {
+				width: 90%;
+			}
+
+			.start_ul {
+				padding-top: 10px;
+			}
+
+			header {
+				width: 20%;
+				margin-left: auto;
+				margin-right: auto;
+				line-height: auto;
+				margin: 0;
+				padding-right: 0;
+				padding-right: 10px;
+
+			}
+
+			header ul li {
+				font-size: 8px;
+			}
+
+			header p {
+				font-size: 9px;
+			}
+
+			#settings {
+				font-size: 8px;
+				display: inline-block;
+			}
+
+			#translate {
+				font-size: 8px;
+				float: left;
+
+			}
+
+			#translatebtn {
+				font-size: 9px;
+				display: inline-flex;
+				line-height: 80%;
+
+			}
+
+			#create {
+				font-size: 8px;
+			}
+
+			.edit_links {
+				margin: 0;
+				padding-left: 1px;
+			}
+
+			.edit_links p {
+				font-size: 8px;
+			}
+			.top_navbar table tr td{
+                font-size: 6px;
+			}
+
+
+		}
+
+
+
+
+
+
+
+		
+		section ul li{
+			font-size: 14px;
+			display: inline-flex;
+			padding: 5px;
+			transform: translateY(50px);
+			cursor: pointer;
+		}
+		
+		#article{
+			border: none;
+		}
+        #read{
+			padding-left: 50%;
+			border-bottom: 1px solid lightblue;
+
+			
+		}
+		#talk{
+			border-left: 1px solid lightblue;
+			border-right: 1px solid lightblue;
+			background-image: linear-gradient(to bottom, #ffffff 2%, rgb(184, 227, 241) 98%);
+		}
+		#source{
+			border-left: 1px solid lightblue;
+			border-right: 1px solid lightblue;
+			background-image: linear-gradient(to bottom, #ffffff 2%, rgb(184, 227, 241) 98%);
+		}
+		#history{
+			border-right: 1px solid lightblue;
+			background-image: linear-gradient(to bottom, #ffffff 2%, rgb(184, 227, 241) 98%);
+		}
+		section ul li a{
+			text-decoration: none;
+			list-style-type: none;
+		}
+
+
+
+   .main {
+	font-family: 'Linux Libertine','Georgia','Times',serif;
+    line-height: 1.3;
+	transform: translateX(25px);
+  }
+  .main hr{
+	  transform: translateX(215px);
+  }
+
+  .main small{
+	  transform: translateY(-35px);
+  }
+  .main #sent{
+	  padding: 20px;
+	  transform: translateX(25px);
+	  font-size:15px;
+  }
+  .main{
+	  width: 98%;
+  }
+
+
+  @media screen and (max-width:1200px) and (min-width:800px){
+	  header img[alt="wiki"]{
+		  width: 85px;
+	  }
+	  
+  }
+
+
+
+		@media screen and (max-width:400px){
+			.top_navbar table tr td{
+             font-size: 5px;
+			}
+			.top_navbar table tr span{
+				font-size: 9px;
+			}
+			
+			header{
+				max-height: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<header>
+			<img src="wikipedia.png"
+				alt="wiki" />
+			<ul class="start_ul">
+				<li>Main page</li>
+				<li>Contents</li>
+				<li>Current Events</li>
+				<li>Random article</li>
+				<li>About wikipedia</li>
+				<li>Contact us</li>
+				<li>Donate</li>
+			</ul>
+			<p>Contribute</p>
+			<hr>
+
+			<ul class="start_ul1">
+				<li>Help</li>
+				<li>Community portal</li>
+				<li>Recent changes</li>
+				<li>Upload file</li>
+			</ul>
+
+			<p>Tools</p>
+			<hr>
+
+			<ul class="start_ul2">
+				<li>What links here</li>
+				<li>Related changes</li>
+				<li>Special pages</li>
+				<li>Permanent link</li>
+				<li>Page infromation</li>
+				<li>Cite this page</li>
+				<li>Wikipedia item</li>
+			</ul>
+			<div>
+				<p>Print/export</p>
+				<hr>
+
+				<ul class="start_ul2">
+					<li>Download as PDF</li>
+					<li>Printable version</li>
+				</ul>
+				<div class="space_btn_lists">&nbsp;</div>
+				<p>In other projects</p>
+				<hr>
+
+				<ul class="start_ul2">
+					<li>Wikimedia commons</li>
+					<li>Meta-Wiki</li>
+					<li>Wikiquote</li>
+					<li>Wikiversity</li>
+				</ul>
+				<div class="space_btn_lists">&nbsp;</div>
+				<p>Languages<span class="material-icons" id="settings">
+						settings
+					</span></p>
+				<hr>
+
+				<ul class="start_ul2">
+					<li>ಕನ್ನಡ</li>
+					<li>മലയാളം</li>
+					<li>मराठी</li>
+					<li>తెలుగు</li>
+					<li>اردو</li>
+					<li>ગુજરાતી</li>
+					<li>हिन्दी</li>
+					<li>தமிழ்</li>
+					<li>বাংলা</li>
+				</ul>
+
+				<button type="button" id="translatebtn"><span class="material-icons" id="translate"
+						style="float: left;">
+						translate
+					</span>140 more</button><br>
+				<div class="edit_links">
+					<span class="material-icons" style="float: left;display: inline-flex;" id="create">
+						create
+						<p>Edit links</p>
+					</span>
+				</div>
+
+		</header>
+		<div class="top_navbar" style="font-size:12px;max-height: 44px;">
+			<table class="float-right">
+				<tr>
+					<td>
+						<span class="material-icons m-2">
+							person
+						</span></td>
+					<td class="p-1 mt-4">Not logged in</td>
+					<td class="p-1 mt-4"><a href="#">Talk</a></td>
+					<td class="p-1 mt-4"><a href="#">Contributions</a></td>
+					<td class="p-1 mt-4"><a href="#">Create accounts</a></td>
+					<td class="p-1 pr-3 mt-4"><a href="#">Log in</a></td>
+				</tr>
+			</table>
+			
+		</div>
+	</main>
+	<!--<section>
+		<ul>
+			<li  id="article"><a href="https://en.wikipedia.org/wiki/Wikipedia">Article</a></li>
+			<li  id="talk"><a href="#">Talk</a></li>
+			<li id="read" ><a href="#">Read</a></li>
+			<li id="source"><a href="#">View source</a></li>
+			<li id="history"><a href="#">View history</a></li>
+		</ul>
+	</section>
+	<section class="main mt-5 p-3">
+		<h3>
+			Wikipedia
+		</h3>
+		<hr>
+		<small>From Wikipedia, the free encyclopedia</small>
+		<p id="sent"><i>For the English edition,</i> see <a href="https://en.wikipedia.org/wiki/English_Wikipedia">English Wikipedia</a>. 
+			For other uses, see <a href="https://en.wikipedia.org/wiki/Wikipedia_(disambiguation)">Wikipedia (disambiguation)</a>.</p>
+
+	    <p>Wikipedia (/ˌwɪkɪˈpiːdiə/ (About this soundlisten) wik-ih-PEE-dee-ə or /ˌwɪki-/ (About this soundlisten) wik-ee-) is a multilingual open-collaborative online encyclopedia 
+			created and maintained by a community of volunteer editors using a wiki-based editing system. It is one of the 15 most popular websites as ranked by Alexa, as of August 2020.[3] Featuring no ads, 
+			it is hosted by the Wikimedia Foundation, an American non-profit organization funded primarily through donations.</p>
+		<p>Wikipedia was launched on January 15, 2001, by Jimmy Wales and Larry Sanger. Sanger coined its name[4][5] as a portmanteau of "wiki" and "encyclopedia". It was initially an 
+			English-language encyclopedia, but versions in other languages were quickly developed. With 6.2 million articles, the English Wikipedia is the 
+			largest of the more than 300 Wikipedia encyclopedias. Overall, Wikipedia comprises more than 55 million articles[6] attracting 1.5 billion unique visitors per month.[7][8]</p>
+			<p>Wikipedia has been criticized for its uneven accuracy and exhibiting systemic and gender bias, where the majority of editors are male. 
+				Edit-a-thons have been held to encourage female editors and increase the coverage of women's topics.[9] In 2006 Time magazine stated that the open-door policy of 
+				allowing anyone to edit had made Wikipedia the biggest and possibly the best encyclopedia in the world, and was a testament to the vision of Jimmy Wales.
+				[10] The project's reputation improved further in the 2010s as it increased efforts to improve its quality and reliability. 
+				In 2018 Facebook and YouTube announced that they would help users detect fake news by suggesting links to related Wikipedia articles.[11]</p>
+	    <ol>
+			<li>History</li>
+		</ol>
+	</section>-->
+</body>
+
+</html>
